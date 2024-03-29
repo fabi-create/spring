@@ -2,7 +2,7 @@
 FROM eclipse-temurin:17-jre-alpine
 
 # Copy the JAR package into the image
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=*.jar
 COPY ${JAR_FILE} app.jar
 
 # Expose the application port
